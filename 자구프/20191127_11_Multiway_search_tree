@@ -1,0 +1,21 @@
+/*
+모든 n ≥0 과 m>2 에 대해 키가 n 개이고 차수가 m 인B 트리는 항상 존재
+order ( 차수 ) m = 3
+degree ( 자식 노드 수 ) = 2 or 3 -> 2 3 tree
+order m = 4
+degree ( 자식 노드 수 ) = 2, 3 or 4 -> 2 3 4 tree
+order m = 5
+2 3 4 5 tree 아님, 3,4,5tree이다.
+
+
+차수 m은 main-memory에 있는 B-tree는 10단위,
+디스크에 있는 B-tree는 100단위가 현실적
+why? 
+Disk io 에서 node의 size가 커지면 disk를 읽을때 disk의 다른 블락을
+읽어야 한다면 비 효율적
+
+삭제할때 무조껀 왼쪽 subtree에서 큰수 가져오기.
+
+B+ tree 시험에 나옴 
+
+*/

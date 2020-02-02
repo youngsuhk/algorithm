@@ -1,0 +1,47 @@
+﻿/*
+red_black_tree
+정의
+RB1. 루트와 모든 외부 노드 들은 컬러가 블랙이다
+RB2. 루트에서 외부 노드로의 경로는 두 개의 연속적인
+레드노드 를 가질 수 없다
+RB3. 루트에서 외부 노드로의 모든 경로들에 있는
+블랙노드 의 수는 동일하다 .
+
+RB1 ''. 내부 노드로부터 외부 노드로의 포인터 는 블랙이다
+RB2 ''. 루트에서 외부 노드로의 경로는 두개의 연속적인
+레드포인터 를 가질 수 없다 .
+RB3 ''. 루트에서 외부 노드로의 모든 경로들에 있는 블랙
+포인터의 수는 동일하다 .
+
+보조 정리 10.1
+루트로부터 외부 노드로의 2 개의 경로 P, Q 가 있을때
+length(P)<=2length(Q)
+
+보조 정리 10.2
+레드 블랙 트리 높이 h, 트리 내부 노드수 n, 랭크 r 이면
+(a) h≤ 2^r
+(b) n ≥ 2^r-1
+(c) h ≤ 2log2(n+1)
+
+type
+LLr
+gu(grand parent unit)의 left자식, left_left가 red 이고 r이 red일때.
+gu를 black, gu의 r,l의 라인을 black로 설정.
+–Move u , pu , and gu up two levels.(2개 level위로 재귀)
+–Continue rebalancing if necessary.
+
+LLb
+gu
+L이 root가 된다
+
+LRb
+LR이 root가 된다.
+
+AVL tree vs Red-Black Tree
+AVL
+RBT-insert, delete할때 교환이 없기때문에 성능이 AVL보다 좋다.
+성능
+Worst case performance: AVL tree 가 더 좋음
+모든 AVL tree 는 red black tree 임
+
+*/
