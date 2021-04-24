@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <session version="1.0">
 <refactoring accessors="true" comment="Delete element from project &apos;baekjoon_java&apos;&#x0D;&#x0A;- Original project: &apos;baekjoon_java&apos;&#x0D;&#x0A;- Original element: &apos;baekjoon_java/src/baekjoon_java.StepByStep.BruteForce&apos;" description="Delete element" element1="/src&lt;baekjoon_java.StepByStep.BruteForce" element2="/src&lt;baekjoon_java.StepByStep" element3="/src&lt;baekjoon_java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1619246455426" subPackages="false" version="1.0"/>
+=======
+<session version="1.0">&#x0A;<refactoring accessors="true" comment="Delete element from project &apos;baekjoon_java&apos;&#x0D;&#x0A;- Original project: &apos;baekjoon_java&apos;&#x0D;&#x0A;- Original element: &apos;baekjoon_java.StepByStepProblem.bruteForce.test.java&apos;" description="Delete element" element1="/src&lt;baekjoon_java.StepByStepProblem.bruteForce{test.java" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1619242297949" subPackages="false" version="1.0"/>&#x0A;<refactoring accessors="true" comment="Delete element from project &apos;baekjoon_java&apos;&#x0D;&#x0A;- Original project: &apos;baekjoon_java&apos;&#x0D;&#x0A;- Original element: &apos;baekjoon_java/src/baekjoon_java.StepByStepProblem.bruteForce&apos;" description="Delete element" element1="/src&lt;baekjoon_java.StepByStepProblem.bruteForce" element2="/src&lt;baekjoon_java.StepByStepProblem" element3="/src&lt;baekjoon_java" elements="3" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1619245659171" subPackages="false" version="1.0"/>
+>>>>>>> 599ca24d005ac554ad13b0f9ce6af80a52e9b6f8
 </session>
