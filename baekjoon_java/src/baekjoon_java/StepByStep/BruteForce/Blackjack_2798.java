@@ -2,7 +2,7 @@ package baekjoon_java.StepByStep.BruteForce;
 
 import java.util.Scanner;
 
-public class Blackjack {
+public class Blackjack_2798 {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);

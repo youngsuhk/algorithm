@@ -2,7 +2,7 @@ package baekjoon_java.StepByStep.BruteForce;
 
 import java.util.Scanner;
 
-public class RepaintingTheChessboard {
+public class RepaintingTheChessboard_1018 {
 	static char board[][];
 	static int min = 99;
 	public static void main(String[] args) {
