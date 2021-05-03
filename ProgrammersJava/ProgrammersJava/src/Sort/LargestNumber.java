@@ -25,10 +25,8 @@ public class LargestNumber {
 	        Arrays.sort(temp,new Comparator<String>() {
 	            @Override
 	            public int compare(String a, String b) {
-	            	System.out.println(b+a);
-	            	System.out.println(a+b);
 	                return (b+a).compareTo(a+b);
-	                //오름차순 정렬 (o2+o1작은것).compareTo(o1+o2큰것);
+	                //(뒤에 넣고 싶은문자).compareTo(앞에 두고 싶은 문자);
 	            }
 	        });
 	        //number ={0,0,0}일경우 결과가 000이나오면 안됨
