@@ -1,14 +1,22 @@
 package BFS_DFS;
 
 import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
 
 public class Network {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int n = 3;
-		int[][] computers = { { 1, 0, 0 }, { 0, 1, 0 }, { 0, 0, 1 } };
-
+		int n = 6;
+		// int[][] computers={{1}};
+		// int[][] computers = { { 1, 1, 0, 1, 0 }, { 1, 1, 0, 0, 0 }, { 0, 0, 1, 0, 1
+		// }, { 1, 0, 0, 1, 0 }, { 0, 0, 1, 0, 1 } };
+		// int[][] computers= {{1,0,1},{0,1,0},{1,0,1}};
+		int[][] computers = { { 1, 0, 1, 0, 0, 1 }, { 0, 1, 0, 1, 0, 0 }, { 1, 0, 1, 0, 0, 0 }, { 0, 1, 0, 1, 1, 0 },
+				{ 0, 0, 0, 1, 1, 0 }, { 1, 0, 0, 0, 0, 1 } };
+		int[][] computers1 = { { 1, 1, 1, 1 }, { 1, 1, 1, 1 }, { 1, 1, 1, 1 }, { 1, 1, 1, 1 } };
+		int[][] computers2 = { { 1, 0, 0, 1 }, { 0, 1, 0, 0 }, { 0, 0, 1, 0 }, { 1, 0, 0, 1 } };
 		System.out.println(solution(n, computers));
 	}
 
@@ -19,7 +27,7 @@ public class Network {
 		int answer = 1;
 		root = new int[n];
 		rank = new int[n];
-
+		Set<Integer> set = new HashSet<>();
 		for (int i = 0; i < n; i++) {
 			root[i] = i;
 		}
@@ -29,11 +37,14 @@ public class Network {
 					union(i, j);
 			}
 		}
-		Arrays.sort(root);
-		for (int i = 1; i < n; i++) {
-			if (root[i - 1] != root[i])
-				answer++;
+		for (int i = 0; i < n; i++) {
+			find(i);
 		}
+		System.out.println(Arrays.toString(root));
+		for (int loop : root) {
+			set.add(loop);
+		}
+		answer = set.size();
 		return answer;
 	}
 
@@ -41,7 +52,7 @@ public class Network {
 		if (root[x] == x) {
 			return x;
 		} else {
-			return find(root[x]);
+			return root[x] = find(root[x]);
 		}
 	}
 
