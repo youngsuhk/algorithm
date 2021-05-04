@@ -9,10 +9,7 @@ public class Network {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n = 6;
-		// int[][] computers={{1}};
-		// int[][] computers = { { 1, 1, 0, 1, 0 }, { 1, 1, 0, 0, 0 }, { 0, 0, 1, 0, 1
-		// }, { 1, 0, 0, 1, 0 }, { 0, 0, 1, 0, 1 } };
-		// int[][] computers= {{1,0,1},{0,1,0},{1,0,1}};
+		
 		int[][] computers = { { 1, 0, 1, 0, 0, 1 }, { 0, 1, 0, 1, 0, 0 }, { 1, 0, 1, 0, 0, 0 }, { 0, 1, 0, 1, 1, 0 },
 				{ 0, 0, 0, 1, 1, 0 }, { 1, 0, 0, 0, 0, 1 } };
 		int[][] computers1 = { { 1, 1, 1, 1 }, { 1, 1, 1, 1 }, { 1, 1, 1, 1 }, { 1, 1, 1, 1 } };
