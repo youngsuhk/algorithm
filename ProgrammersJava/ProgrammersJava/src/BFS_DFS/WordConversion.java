@@ -28,21 +28,23 @@ public class WordConversion {
 
 	public static int solution(String begin, String target, String[] words) {
 		int answer = 0;
-		answer = dfs(begin, target, words, 0, 0);
+		answer = dfs(begin, target, words, 0, new boolean[words.length]);
 
 		return answer;
 	}
 
-	public static int dfs(String begin, String target, String[] words, int index, int cnt) {
+	public static int dfs(String begin, String target, String[] words, int cnt, boolean[] visited) {
 
 		if (begin.equals(target)) {
 			return cnt;
 		}
 		int result = 0;
-		for (int i = index; i < words.length; i++) {
-			if (checkWords(begin, words[i]))
-				result = dfs(words[i], target, words, i + 1, cnt + 1);
-
+		for (int i = 0; i < words.length; i++) {
+			if (!visited[i] && checkWords(begin, words[i])) {
+				visited[i] = true;
+				result = dfs(words[i], target, words, cnt + 1, visited);
+				visited[i] = false;
+			}
 		}
 		return result;
 	}
