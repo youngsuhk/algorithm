@@ -6,7 +6,7 @@ public class DiskController {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		int[][] jobs = { { 2, 4 }, { 2, 3 }, { 3, 10 } };
+		int[][] jobs = { { 0, 3 }, { 1, 9 }, { 2, 6 } };
 		//System.out.println(jobs[0][0]);
 		System.out.println(solution(jobs));
 	}

@@ -584,3 +584,18 @@ java.lang.Error: SWT Resource was not properly disposed
 
 !ENTRY org.eclipse.ui.navigator 2 0 2021-05-13 08:45:41.309
 !MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.debug.core 2 0 2021-05-24 12:08:17.346
+!MESSAGE Compile error during code evaluation: The package java.lang is accessible from more than one module: ProgrammersJava, java.base
+
+!ENTRY org.eclipse.debug.core 2 0 2021-05-24 12:08:17.365
+!MESSAGE Compile error during code evaluation: The package java.lang is accessible from more than one module: ProgrammersJava, java.base
+
+!ENTRY org.eclipse.debug.core 2 0 2021-05-24 12:08:17.379
+!MESSAGE Compile error during code evaluation: The package java.lang is accessible from more than one module: ProgrammersJava, java.base
+
+!ENTRY org.eclipse.debug.core 2 0 2021-05-24 12:08:17.391
+!MESSAGE Compile error during code evaluation: The package java.lang is accessible from more than one module: ProgrammersJava, java.base
+
+!ENTRY org.eclipse.debug.core 2 0 2021-05-24 12:08:17.407
+!MESSAGE Compile error during code evaluation: The package java.lang is accessible from more than one module: ProgrammersJava, java.base
